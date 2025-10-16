@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection - vāsas.co</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfdfd;
+            color: #1a1a1a;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .nav-link {
+            position: relative;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: #292524;
+            bottom: -2px;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease;
+        }
+        .nav-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold font-serif tracking-wider">
+                     <a href="index.html" class="flex items-center">
+                        <span class="text-stone-900">vāsas.co</span>
+                    </a>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8 text-stone-800">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="explore.html" class="nav-link">Collection</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-stone-800 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+         <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html" class="block py-2 text-center hover:bg-stone-100 rounded-md">Home</a>
+            <a href="explore.html" class="block py-2 text-center hover:bg-stone-100 rounded-md">Collection</a>
+            <a href="about.html" class="block py-2 text-center hover:bg-stone-100 rounded-md">About Us</a>
+            <a href="contact.html" class="block py-2 text-center hover:bg-stone-100 rounded-md">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Collection Section -->
+        <section class="py-20 pt-32 min-h-screen">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-serif font-semibold">One of One Collection</h2>
+                    <p class="text-stone-600 mt-2">Each design exists in a single size, crafted uniquely for its perfect owner.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    
+                    <!-- Product 1 -->
+                    <a href="product-1.html" class="bg-white rounded-lg shadow-lg overflow-hidden group block">
+                        <div class="overflow-hidden">
+                            <img src="ObsidianFade.png" alt="Obsidian Fade Denim Jacket" class="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold font-serif">Obsidian Fade Denim Jacket</h3>
+                            <p class="text-stone-600 mt-2">Size: Xxl</p>
+                        </div>
+                    </a>
+
+                     <!--
+                     <a href="product-2.html" class="bg-white rounded-lg shadow-lg overflow-hidden group block">
+                        <div class="overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1520006403909-838d6b92c22e?q=80&w=1887&auto=format&fit=crop" alt="The Statement Layer" class="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold font-serif">The Statement Layer</h3>
+                            <p class="text-stone-600 mt-2">Size: </p>
+                        </div>
+                    </a>
+
+                     Product 3 
+                    <a href="product-3.html" class="bg-white rounded-lg shadow-lg overflow-hidden group block">
+                         <div class="overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1591047139829-d916bb69a4c3?q=80&w=1887&auto=format&fit=crop" alt="The Essential Field Jacket" class="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold font-serif">The Essential Field Jacket</h3>
+                            <p class="text-stone-600 mt-2">Size: S</p>
+                        </div>
+                    </a>
+
+                     Product 3 -
+                    <a href="product-3.html" class="bg-white rounded-lg shadow-lg overflow-hidden group block">
+                         <div class="overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1591047139829-d916bb69a4c3?q=80&w=1887&auto=format&fit=crop" alt="The Essential Field Jacket" class="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold font-serif">The Essential Field Jacket</h3>
+                            <p class="text-stone-600 mt-2">Size: S</p>
+                        </div>
+                    </a>
+
+                     HOW TO ADD MORE PRODUCTS -->
+                    <!-- To add your other 17 products, just copy one of the product blocks above and paste it here. -->
+                    <!-- Make sure you change: -->
+                    <!-- 1. The link: href="product-4.html" -->
+                    <!-- 2. The image src="..." and alt="..." -->
+                    <!-- 3. The product title and size -->
+                    <!-- You will need to create the corresponding product-4.html file for it to link correctly. -->
+
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer class="bg-stone-900 text-stone-300 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-2xl font-serif mb-4">vāsas.co</p>
+            <p class="mb-6">Stay connected. Follow our journey.</p>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="hover:text-white transition-colors"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
+                <a href="#" class="hover:text-white transition-colors"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg></a>
+                <a href="#" class="hover:text-white transition-colors"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.795 2.013 10.148 2 12.315 2zm-1.161 4.573a.75.75 0 01.058 1.496 4.963 4.963 0 11-3.565 3.565.75.75 0 01-1.12-1.122 6.463 6.463 0 105.748-5.748.75.75_0 01-1.122-.19z" clip-rule="evenodd" /></svg></a>
+            </div>
+            <p class="text-sm text-stone-500">&copy; 2025 vāsas.co. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
